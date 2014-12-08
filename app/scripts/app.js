@@ -29,7 +29,11 @@ angular
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl'
       })
+      .when('/home',{
+        templateUrl: 'views/home.html',
+        controller: 'HomeCtrl'
+      })
       .otherwise({
-        redirectTo: '/'
+        redirectTo: '/404.html'
       });
   });
